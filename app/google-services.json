@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998743806233",
+    "project_id": "petgodparents",
+    "storage_bucket": "petgodparents.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998743806233:android:cc55fb1c60ea23b80f7588",
+        "android_client_info": {
+          "package_name": "com.petgodparents.petgodparents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998743806233-uh2tv4l5d0qa5uu6og9oks3qmeie4j1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHsOZbBcXwu3dXAObYw5hkPPI8uy6v1Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998743806233-uh2tv4l5d0qa5uu6og9oks3qmeie4j1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

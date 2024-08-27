@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PetGodParents</string>
+    <string name="appt_patient_label">Patient:</string>
+    <string name="appt_type_label">Type:</string>
+    <string name="appt_status_label">Status:</string>
+    <string name="appt_patient_type_str">(%s)</string>
+    <string name="appt_cancel_button_text">Cancel</string>
+    <string name="appt_edit_button_text">Edit</string>
+    <string name="appt_new_appointment_button_text">Create new appointment</string>
+    <string name="create_appointment_title">Create Appointment</string>
+    <string name="create_appointment_date_label">Date</string>
+    <string name="create_appointment_type_label">Type</string>
+    <string name="create_appointment_pet_label">Patient</string>
+    <string name="create_appointment_description_label">Description</string>
+    <string name="create_appointment_button_text">Create Appointment</string>
+    <string name="success_dialog_title">Success</string>
+    <string name="error_dialog_title">Oops, something wrong happened</string>
+    <string name="ok_button_label">OK</string>
+
+    <string-array name="appointment_status">
+        <item>General</item>
+        <item>Urgency</item>
+        <item>Control</item>
+
+    </string-array>
+</resources>
