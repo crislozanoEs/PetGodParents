@@ -1,12 +1,13 @@
 package com.petgodparents.petgodparents.presentation.forms
 
 import android.widget.Button
+import java.lang.ref.WeakReference
 
-class Form (val button: Button) {
+class Form (private val button: WeakReference<Button>) {
 
     private val fields = mutableListOf<Field>()
 
-    val isValid: Boolean
+    private val isValid: Boolean
         get() {
             if(fields.isEmpty()){
                 return false
@@ -28,14 +29,14 @@ class Form (val button: Button) {
     }
 
     private fun checkButtonStatus() {
-        button.isEnabled = isValid
+        button.get()?.isEnabled = isValid
     }
 
     fun validateThis(isValid: Boolean) {
         if(isValid) {
             checkButtonStatus()
         } else {
-            button.isEnabled = false
+            button.get()?.isEnabled = false
         }
     }
 

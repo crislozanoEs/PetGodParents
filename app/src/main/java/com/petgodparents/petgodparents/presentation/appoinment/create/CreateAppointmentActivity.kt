@@ -21,6 +21,7 @@ import com.petgodparents.petgodparents.presentation.forms.Form
 import com.petgodparents.petgodparents.presentation.forms.fields.InputTextField
 import com.petgodparents.petgodparents.presentation.forms.validators.NoEmptyTextValidator
 import dagger.hilt.android.AndroidEntryPoint
+import java.lang.ref.WeakReference
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -41,7 +42,7 @@ class CreateAppointmentActivity : AppCompatActivity() {
         binding.createAppointmentType.adapter = arrayAdapter
 
 
-        val form = Form(binding.createAppointmentButton)
+        val form = Form(WeakReference(binding.createAppointmentButton))
         form.addInputToForm(InputTextField(binding.createAppointmentDescription, NoEmptyTextValidator(), true))
         form.addInputToForm(InputTextField(binding.createAppointmentPet, NoEmptyTextValidator(), true))
         form.addInputToForm(InputTextField(binding.createAppointmentDate, NoEmptyTextValidator(), true))

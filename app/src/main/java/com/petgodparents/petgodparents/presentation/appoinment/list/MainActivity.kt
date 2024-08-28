@@ -50,10 +50,12 @@ class MainActivity : AppCompatActivity(), AppointmentListAdapter.Listener {
 
                 is Status.Error -> {
                     binding.loading.isVisible = false
+                    binding.appointmentList.isVisible = false
                     Toast.makeText(this, it.errorMessage, Toast.LENGTH_LONG).show()
                 }
             }
         }
+        startActivity(Intent(this, CreateAppointmentActivity::class.java))
     }
 
     override fun onAppointmentClick(appointment: Appointment) {
