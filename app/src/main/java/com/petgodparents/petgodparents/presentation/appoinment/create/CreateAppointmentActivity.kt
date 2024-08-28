@@ -43,9 +43,9 @@ class CreateAppointmentActivity : AppCompatActivity() {
 
 
         val form = Form(WeakReference(binding.createAppointmentButton))
-        form.addInputToForm(InputTextField(binding.createAppointmentDescription, NoEmptyTextValidator(), true))
-        form.addInputToForm(InputTextField(binding.createAppointmentPet, NoEmptyTextValidator(), true))
-        form.addInputToForm(InputTextField(binding.createAppointmentDate, NoEmptyTextValidator(), true))
+        form.addInputToForm(InputTextField(WeakReference(binding.createAppointmentDescription), NoEmptyTextValidator(), true))
+        form.addInputToForm(InputTextField(WeakReference(binding.createAppointmentPet), NoEmptyTextValidator(), true))
+        form.addInputToForm(InputTextField(WeakReference(binding.createAppointmentDate), NoEmptyTextValidator(), true))
 
         form.addInputToForm(object: Form.Field {
             override var form: Form? = null
